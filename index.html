@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Math Table Generator</h1>
+
+      <div class="controls">
+        <label for="operation">Math Operation:</label>
+        <select id="operation">
+          <option value="multiply">Multiplication (&times;)</option>
+          <option value="add">Addition (+)</option>
+          <option value="subtract">Subtraction (-)</option>
+          <option value="divide">Division (&divide;)</option>
+        </select>
+
+        <label for="baseNumber">Base Number:</label>
+        <input type="number" id="baseNumber" value="5" />
+
+        <label for="startRange">Start:</label>
+        <input type="number" id="startRange" value="1" />
+
+        <label for="endRange">End:</label>
+        <input type="number" id="endRange" value="10" />
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="hideAnswers" />
+          <label for="hideAnswers">Worksheet Mode (Hide Answers)</label>
+        </div>
+
+        <button id="generateBtn">Generate Table</button>
+      </div>
+
+      <div id="output" class="output-area">
+        Click "Generate Table" to start!
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
